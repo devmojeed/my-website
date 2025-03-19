@@ -1,0 +1,171 @@
+/*--------------------------------------------------------------
+20. Service Page
+--------------------------------------------------------------*/
+
+.service-page {
+    .service-area {
+        padding-top: 120px;
+
+        @media(max-width:991px) {
+            padding-top: 90px;
+        }
+
+        @media(max-width:767px) {
+            padding-top: 80px;
+        }
+
+        .service-item {
+            transform: unset;
+            background: none;
+            border: 1px solid $border-color;
+            padding-top: 50px;
+
+            .service-text {
+                .icon {
+                    height: 60px;
+                    margin-bottom: 50px;
+
+                    &::before {
+                        left: -10px;
+                        top: 10px;
+                    }
+
+                    i {
+                        font-size: 60px;
+                        line-height: unset;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// service-single-page
+
+.service-single-page {
+    .serice-details {
+        .details-text {
+            margin-top: 35px;
+
+            h2 {
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 130%;
+                text-transform: capitalize;
+                color: $black-bg-color;
+                margin-bottom: 15px;
+            }
+        }
+
+        .details-items {
+            padding: 30px 0;
+
+            h3 {
+                display: flex;
+                align-items: center;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 27px;
+                color: $black-bg-color;
+
+                i {
+                    font-size: 10px;
+                    width: 20px;
+                    height: 20px;
+                    line-height: 20px;
+                    text-align: center;
+                    background: $black-bg-color;
+                    border-radius: 50%;
+                    color: $white;
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+
+    .service-area {
+        padding-top: 40px;
+        padding-bottom: 0;
+
+        .service-item {
+            transform: unset;
+            background: none;
+            border: 1px solid $border-color;
+            padding: 40px;
+            text-align: center;
+
+            @media(max-width:1199px) {
+                padding: 20px;
+            }
+        }
+    }
+
+    .service-sidebar {
+        @media(max-width:991px) {
+            margin-top: 50px;
+        }
+
+        .widget {
+            h3 {
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 30px;
+                color: $black-bg-color;
+                margin-bottom: 30px;
+            }
+        }
+
+        .category-widget {
+            margin-bottom: 40px;
+
+            ul {
+                li {
+                    margin-bottom: 19px;
+
+                    a {
+                        display: block;
+                        border-radius: 5px;
+                        border: 1px solid $border-color;
+                        padding: 20px 15px;
+                        color: $body-color;
+
+                        &:hover {
+                            background: $project-primary-color;
+                        }
+                    }
+                }
+            }
+        }
+
+        .info-widget {
+            input {
+                border: 1px solid $border-color;
+                padding: 15px;
+                height: 50px;
+                width: 100%;
+                margin-bottom: 30px;
+                border-radius: 5px;
+            }
+
+            button {
+                width: 100%;
+                height: 50px;
+                text-align: center;
+                background: $project-primary-color;
+                border: 0;
+                border-radius: 5px;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 32px;
+                letter-spacing: 1.28px;
+                text-transform: uppercase;
+                font-family: $heading-font;
+            }
+        }
+    }
+
+}

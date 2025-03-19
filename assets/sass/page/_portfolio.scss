@@ -1,0 +1,81 @@
+/*--------------------------------------------------------------
+21. Portfolio Page
+--------------------------------------------------------------*/
+
+// portfolio-single
+
+.portfolio-single {
+    .portfolio-details {
+        h2 {
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 130%;
+            text-transform: capitalize;
+            margin-bottom: 20px;
+
+            @media(max-width:575px) {
+                font-size: 28px;
+            }
+        }
+
+        .details-img {
+            padding: 30px 0;
+        }
+
+        .details-items {
+            margin-top: 40px;
+
+            h4 {
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 30px;
+                margin-top: 20px;
+            }
+        }
+    }
+
+    .portfolio-sidebar {
+        @media(max-width:991px) {
+            margin-top: 50px;
+        }
+
+        .details-widget {
+            background: $project-primary-color;
+            padding: 40px;
+
+            @media(max-width:1199px) {
+                padding: 25px;
+            }
+
+            .details-widget-item {
+                padding-bottom: 15px;
+                margin-bottom: 15px;
+                border-bottom: 1px solid $white;
+
+                &:last-child {
+                    margin-bottom: 0;
+                    padding-bottom: 0;
+                    border: 0;
+                }
+
+                span {
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 30px;
+                }
+
+                h4 {
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 27px;
+                    margin-top: 3px;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

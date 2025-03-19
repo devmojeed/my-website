@@ -1,0 +1,91 @@
+.ch-btn-style-1,
+.ch-btn-style-2,
+.ch-btn-style-3 {
+	background: transparent;
+	color: $white;
+	display: inline-block;
+	font-weight: 500;
+	padding: 12px 35px;
+	padding-right: 55px;
+	border: 0;
+	z-index: 11;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 32px;
+	letter-spacing: 1.28px;
+	text-transform: uppercase;
+	font-family: $heading-font;
+	border: 1px solid $project-primary-color;
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden;
+
+	&:after {
+		position: absolute;
+		top: 11px;
+		right: 25px;
+		content: "\e914";
+		font-family: 'icomoon';
+		font-size: 10px;
+
+		@include media-query(767px) {
+			top: 5px;
+		}
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: $main-heading-color;
+	}
+
+	@include media-query(991px) {
+		font-size: 18px;
+		font-size: calc-rem-value(18);
+	}
+
+	@include media-query(767px) {
+		padding: 5px 18px;
+		font-size: 14px;
+		padding-right: 45px;
+	}
+}
+
+.ch-btn-animated span {
+	position: absolute;
+	content: "";
+	width: 0;
+	height: 0;
+	left: 50%;
+	top: 50%;
+	z-index: -1;
+	-webkit-transition: all 1s;
+	transition: all 1s;
+	background-color: $project-primary-color;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+}
+
+.ch-btn-animated:hover span {
+	width: 650px;
+	height: 650px;
+}
+
+.ch-btn-style-2 {
+	color: $white;
+	background: $project-primary-color;
+	color: $main-heading-color;
+	margin-right: 20px;
+
+	&:hover {
+		background: $project-primary-color-s2;
+		color: $white;
+	}
+}
+
+.ch-btn-style-3  {
+	border-color: #E3E3E3;
+	color: $main-heading-color;
+}

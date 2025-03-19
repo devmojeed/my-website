@@ -1,0 +1,41 @@
+/*---------------------------
+	Fonts
+----------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+
+// fonts
+$base-font-size: 15;
+$base-font: "Rubik", sans-serif;
+$heading-font: "Rajdhani";
+
+
+
+// color
+$main-heading-color: #1C3F39;
+$body-color: #2A2C30;
+$white: #fff;
+$light: #8188a9;
+$black: #000;
+$small-black: #333;
+$cyan: #848892;
+
+$project-primary-color: #FF6F6F;
+$project-primary-color-s2: #1C3F39;
+$project-primary-color-s3: #FFA903;
+$project-primary-color-s4: #A66EFF;
+$body-bg-color: #1F1F1F;
+$black-bg-color: #131514;
+$section-bg-color: #FCFDFA;
+$section-bg-color-s2: #FAF2EE;
+$section-bg-color-s3: #F1F3EE;
+$section-bg-color-s4: #F5F5F5;
+$black-section-bg-color: #1A1A1C;
+$text-color: #5C5C5C;
+$text-light-color: #7b7b7b;
+$heading-color: $main-heading-color;
+$heading-color2: #3F3F3F;
+$border-color: #E3E3E3;
+$border-color-s2: #e4ebf2;
+$dark-border-color: rgba(255, 255, 255, 0.10);

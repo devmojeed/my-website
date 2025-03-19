@@ -1,0 +1,402 @@
+/*--------------------------------------------------------------
+18. Home-style-4
+--------------------------------------------------------------*/
+body.dark-mode {
+
+	.ch-btn-style-2 {
+		border-color: $dark-border-color;
+
+		&.ch-btn-animated span {
+			background-color: $project-primary-color-s3;
+		}
+
+		&:hover {
+			color: $white;
+		}
+	}
+
+	.ch-top-title span,
+	.ch-top-title-s2 span,
+	.ch-top-title-s3 span {
+		color: $project-primary-color-s3;
+	}
+
+	.ch-top-title h2 small,
+	.ch-top-title-s2 h2 small,
+	.ch-top-title-s3 h2 small {
+		-webkit-text-stroke: 1px $white;
+	}
+
+	.cp-header-style-2 {
+		@media(max-width:991px) {
+			padding: 20px;
+		}
+
+		.mean-container a.meanmenu-reveal {
+			background-color: $project-primary-color-s3;
+			border-color: $project-primary-color-s3;
+
+			@media (max-width: 450px) {
+				margin-top: -45px;
+			}
+		}
+	}
+
+	.cp-header-area-right {
+		text-align: right;
+
+		@media(max-width:991px) {
+			text-align: left;
+		}
+
+		.ch-btn-style-2 {
+			background: none;
+
+			@media(max-width:991px) {
+				text-align: left;
+			}
+
+			&:hover {
+				background-color: $project-primary-color-s3;
+			}
+		}
+	}
+
+	// about-area-s2 style-3
+
+	.about-area-s2.style-3 {
+		.about-left-item .about-left-img {
+
+			.simpleParallax,
+			img {
+				border-radius: 0;
+			}
+		}
+
+		.about-right-item .about-right-text h2 small {
+			-webkit-text-stroke: 1px $white;
+		}
+	}
+
+	// .service-area style-3
+
+	.service-area.style-3 {
+		.service-item {
+			border: 0;
+			border-bottom: 1px solid $dark-border-color;
+			border-radius: 0;
+			padding-left: 30px;
+			padding-top: 0;
+
+			&.active {
+				transform: unset;
+			}
+
+			.service-text h3 {
+				max-width: 200px;
+			}
+		}
+	}
+
+	// benefit-area
+
+	.benefit-area {
+		.benefit-item {
+			border-color: $dark-border-color;
+
+			.benefit-text {
+				.icon {
+					i {
+						color: $white;
+					}
+
+					&::before {
+						background-color: #1A1A1C;
+					}
+				}
+
+				h3 {
+					a {
+						color: $white;
+					}
+				}
+
+				p {
+					color: #ddd;
+				}
+
+				a.read-more {
+					color: $white;
+
+					&:hover {
+						color: $project-primary-color-s3;
+					}
+				}
+			}
+		}
+	}
+
+	// .ch-portfolio-area-s2
+	.ch-portfolio-area-s2 {
+		background: $black-section-bg-color;
+
+		.porfolio-wrap .porfolio-item .porfolio-des {
+			p {
+				margin-bottom: 15px;
+			}
+
+			a.read-more {
+				font-family: $heading-font;
+				font-size: 16px;
+				font-style: normal;
+				font-weight: 700;
+				line-height: 32px;
+				letter-spacing: 1.28px;
+				text-transform: uppercase;
+				color: $white;
+				position: relative;
+				padding-right: 25px;
+
+				&:before {
+					position: absolute;
+					right: 0px;
+					top: 4px;
+					content: "\e914";
+					font-family: 'icomoon';
+					-webkit-transition: all 0.3s;
+					transition: all 0.3s;
+					font-size: 12px;
+					line-height: 100%;
+					transition: all .3s;
+				}
+
+				&:hover {
+					letter-spacing: 1.9px;
+					color: $project-primary-color-s3;
+
+					&:before {
+						right: -3px;
+					}
+				}
+			}
+		}
+
+		.porfolio-wrap .porfolio-item .porfolio-img::before {
+			background-color: $project-primary-color-s3;
+		}
+	}
+
+	// testimonial-section-s2
+
+	.testimonial-section-s2 {
+		.testimonial-item {
+			padding: 0px 0px;
+			background: none;
+			padding-bottom: 40px;
+			border-bottom: 2px solid $project-primary-color-s3;
+			position: relative;
+
+			&:before {
+				position: absolute;
+				bottom: 30px;
+				right: 30px;
+				content: "\e915";
+				font-family: "icomoon";
+				font-size: 60px;
+				color: #2A2C30;
+				opacity: .5;
+				z-index: -1;
+
+				@media(max-width:575px) {
+					display: none;
+				}
+			}
+
+			.testimonial-text {
+				ul {
+					li {
+						color: $project-primary-color-s3;
+
+						span {
+							color: $white;
+						}
+					}
+				}
+
+				p {
+					font-size: 16px;
+					font-style: normal;
+					font-weight: 400;
+					line-height: 30px;
+					color: #ddd;
+				}
+
+				.testimonial-info span {
+					color: #ddd;
+				}
+			}
+
+
+		}
+
+		.owl-nav [class*=owl-] {
+			right: 80px;
+			top: -150px;
+			border-color: $dark-border-color;
+			color: $white;
+
+			&:hover {
+				background: $project-primary-color-s3;
+			}
+		}
+
+		.owl-nav [class*=owl-].owl-next {
+			right: 0;
+		}
+
+		.owl-dots button.active {
+			background-color: $project-primary-color-s3;
+		}
+	}
+
+	.video-area {
+		.video-img .video-btn {
+			background-color: #2A2C30;
+
+			&:before {
+				border-left: 25px solid $project-primary-color-s3;
+			}
+		}
+	}
+
+	// text-moving-sec-s2
+
+	.text-moving-sec-s2 {
+		h1 {
+			span {
+				i {
+					color: $project-primary-color-s3;
+					margin-left: 20px;
+				}
+			}
+		}
+	}
+
+	// team-area 
+
+	.team-area {
+		.team-item {
+			&:before {
+				background: none;
+				border: 1px solid $dark-border-color;
+			}
+
+			.team-text {
+				h3 a {
+					color: $white;
+
+					&:hover {
+						color: $project-primary-color-s3;
+					}
+				}
+
+				span {
+					color: #ddd;
+				}
+
+			}
+		}
+	}
+
+	// funfact-area
+
+	.funfact-area.style-2 {
+		.info {
+			background: transparent;
+			text-align: center;
+			border: 0;
+			border-radius: 0;
+			border-right: 1px solid $dark-border-color;
+
+			p {
+				color: #ddd;
+			}
+
+			h3 {
+				-webkit-text-stroke: 1px $white;
+			}
+		}
+	}
+
+	// about-event-area 
+
+	.about-event-area {
+		.event-wrap {
+			background: $black-section-bg-color;
+			border-top: 2px solid $project-primary-color-s3;
+
+			&::before {
+				display: none;
+			}
+		}
+	}
+
+	// company-area
+	.company-area {
+		background-color: $black-bg-color;
+
+		.company-wrap {
+			.comapny-item {
+				background: transparent;
+				border: 1px solid $dark-border-color;
+
+				&::before {
+					background-color: $project-primary-color-s3;
+				}
+
+				.comapny-item-info span {
+					color: $white;
+				}
+
+				small {
+					color: $white;
+				}
+			}
+		}
+	}
+
+	// ch-blog-area-s2
+
+	.ch-blog-area-s2 {
+		.blog-items {
+			.blog-item {
+				background: transparent;
+				border-color: $dark-border-color;
+				position: relative;
+
+				.blog-content {
+					ul {
+						position: absolute;
+						left: 0;
+						top: 0;
+						padding: 10px;
+						background: $black-bg-color;
+
+						li {
+							color: $white;
+						}
+					}
+
+					h2 {
+						margin-top: 0;
+
+						a {
+							color: $white;
+						}
+					}
+				}
+			}
+		}
+	}
+
+}

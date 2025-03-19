@@ -1,0 +1,76 @@
+/*-----------------------------------------------------------------------------------
+    Template Name: Cipher - Creative Agency Portfolio HTML Template
+    Author: DesignCurved 
+    Author URI: https://themeforest.net/user/DesignCurved
+    Version: 1.0
+
+--------------------------
+   CSS INDEX
+--------------------------
+    01. Common css 
+    02. header section
+    03. Hero Style
+    04. footer Style
+    05. Home-style-1
+    06. text-moving-sec 
+    07. service-area
+    08. text-moving-sec-s2
+    09. about-area 
+    10. ch-service-area 
+    11. ch-portfolio-area
+    12. testimonial-section
+    13. ch-skill-area
+    14. ch-blog-area
+    15. ch-newsletter-area
+    16. Home-style-2
+    17. Home-style-3
+    18. Home-style-4
+    19. About Page
+    20. Service Page
+    21. Portfolio Page
+    22.	team single page
+    23. Service Page
+    24. Blog Page
+    25. Blog Single Page
+
+    -----------------------------------------------------------------------------------*/
+
+// helpers
+@import "helpers/variables";
+@import "helpers/mixins";
+
+// base
+@import "base/base";
+
+
+// components
+@import "components/section-title";
+@import "components/buttons";
+@import "components/form";
+@import "components/social-links";
+@import "components/page-title";
+@import "components/preloader";
+@import "components/pagination";
+
+// layout
+@import "layout/header";
+@import "layout/hero-slider";
+@import "layout/footer";
+
+// components
+@import "components/sticky-header";
+
+
+// page
+@import "page/home-default";
+@import "page/home-style-2";
+@import "page/home-style-3";
+@import "page/home-style-4";
+@import "page/home-style-5";
+@import "page/about";
+@import "page/services";
+@import "page/portfolio";
+@import "page/blog";
+@import "page/blog-single";
+@import "page/contact";
+@import "page/team-single";

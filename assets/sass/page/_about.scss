@@ -1,0 +1,19 @@
+/*--------------------------------------------------------------
+19. About Page
+--------------------------------------------------------------*/
+
+.about-page {
+    .text-moving-sec-s2 {
+        margin-bottom: 40px;
+
+        @media(max-width:575px){
+            margin-bottom: 20px;
+        }
+    }
+
+    .about-area-s2 {
+        @media(min-width:991px){
+            padding-bottom: 180px;
+        }
+    }
+}
