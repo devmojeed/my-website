@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="DesignCurved">
+    <meta name="author" content="Cloaked Agency">
     <link rel="shortcut icon" type="image/png" href="../assets/images/cloaked-agency-favicon.svg">
     <title> Cloaked Agency - Design, SEO, and Marketing Agency</title>
     <!--**************** Icon Css ****************-->
@@ -191,7 +191,8 @@
                                     </div>
                                     <div class="widget info-widget">
                                         <h3>Information</h3>
-                                        <form action="../process_form.php" method="post">
+                                        <form name="contact-form" method="POST" data-netlify="true">
+                                            <input type="hidden" name="form-name" value="contact-form" />
                                             <input type="text" name="full_name" placeholder="Full name">
                                             <input type="text" name="phone_number" placeholder="Phone number">
                                             <button type="submit">SUBMIT NOW</button>
@@ -221,8 +222,10 @@
                                     <li>Table & Image Formatting</li>
                                     <li>Up to 10 Pages</li>
                                 </ul>
-                                <button class="select-button">Get Started</button>
-                                <p class="whatsapp-link"><a href="https://wa.me/+2349011881499?text=I'm%20interested%20in%20the%20Basic%20Document%20Formatting%20plan." target="_blank">Custom request via WhatsApp</a></p>
+                                <button class="select-button">
+                                  <a href="https://wa.me/14028627171" target="_blank">  Get Started </a>
+                                </button>
+                                <p class="whatsapp-link"><a href="https://wa.me/14028627171?text=I'm%20interested%20in%20the%20Basic%20Document%20Formatting%20plan." target="_blank">Custom request via WhatsApp</a></p>
                             </div>
                 
                             <div class="pricing-tier pro">
@@ -237,8 +240,10 @@
                                     <li>Advanced Layout & Typography</li>
                                     <li>Up to 20 Pages</li>
                                 </ul>
-                                <button class="select-button upgrade-button">Get Started</button>
-                                <p class="whatsapp-link"><a href="https://wa.me/+2349011881499?text=I'm%20interested%20in%20the%20Professional%20Document%20Design%20plan." target="_blank">Custom request via WhatsApp</a></p>
+                                <button class="select-button">
+                                  <a href="https://wa.me/14028627171" target="_blank">  Get Started </a>
+                                </button>
+                                <p class="whatsapp-link"><a href="https://wa.me/14028627171?text=I'm%20interested%20in%20the%20Professional%20Document%20Design%20plan." target="_blank">Custom request via WhatsApp</a></p>
                             </div>
                 
                             <div class="pricing-tier enterprise popular">
@@ -255,8 +260,10 @@
                                     <li>Dedicated Designer</li>
                                     <li>Comprehensive Branding Guidelines</li>
                                 </ul>
-                                <button class="select-button upgrade-button">Contact Us</button>
-                                <p class="whatsapp-link"><a href="https://wa.me/+2349011881499?text=I'd%20like%20to%20discuss%20the%20Premium%20Document%20Design%20%26%20Template%20Creation%20plan." target="_blank">Custom request via WhatsApp</a></p>
+                                <button class="select-button">
+                                  <a href="https://wa.me/14028627171" target="_blank"> Contact Us  </a>
+                                </button>
+                                <p class="whatsapp-link"><a href="https://wa.me/14028627171?text=I'd%20like%20to%20discuss%20the%20Premium%20Document%20Design%20%26%20Template%20Creation%20plan." target="_blank">Custom request via WhatsApp</a></p>
                             </div>
                         </div>
                     </div>
@@ -314,10 +321,10 @@
                                         <div class="widget-title">
                                             <h3>Get Free Estimate</h3>
                                         </div>
-                                        <form action="#">
+                                        <form name="newsletter" method="POST" data-netlify="true">
+                                            <input type="hidden" name="form-name" value="newsletter" />
                                             <div class="form-field">
-                                                <input type="email" placeholder="Your e-mail address" id="email"
-                                                    required>
+                                                <input type="email" name="email" placeholder="Your e-mail address" id="email" required>
                                                 <button type="submit"><i class="icon-flyer"></i></button>
                                             </div>
                                         </form>

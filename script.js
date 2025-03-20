@@ -226,7 +226,31 @@
     /*------------------------------------------
         = CONTACT FORM SUBMISSION
     -------------------------------------------*/
-    if ($("#contact-form-mejor").length) {
+    const form = document.getElementById('contact-form-mejor');
+const successMessage = document.getElementById('form-message-success');
+const errorMessage = document.getElementById('form-message-error');
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault(); // Prevent default submission
+
+  fetch('/', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: new URLSearchParams(new FormData(form)).toString(),
+  })
+    .then(() => {
+      successMessage.style.display = 'block';
+      errorMessage.style.display = 'none';
+      form.reset(); // Clear the form
+    })
+    .catch((error) => {
+      errorMessage.style.display = 'block';
+      successMessage.style.display = 'none';
+      console.error('Form submission error:', error);
+    });
+});
+
+    /*if ($("#contact-form-mejor").length) {
         $("#contact-form-mejor").validate({
             rules: {
                 name: {
@@ -277,7 +301,7 @@
             }
 
         });
-    }
+    }*/
 
 
     $(document).ready(function () {

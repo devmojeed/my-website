@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="DesignCurved">
+    <meta name="author" content="Cloaked Agency">
     <link rel="shortcut icon" type="image/png" href="assets/images/cloaked-agency-favicon.svg">
     <title> Cloaked Agency - Design, SEO, and Marketing Agency</title>
     <!--**************** Icon Css ****************-->
@@ -153,7 +153,8 @@
                             </div>
                             <div class="col col-lg-7 col-12">
                                 <div class="contact-form-area">
-                                    <form method="post" class="contact-activation" id="contact-form-mejor" novalidate="novalidate" action="cloaked-agency/mail-contact.php">
+                                    <form method="post" class="contact-activation" id="contact-form-mejor" name="contact-form-mejor" data-netlify="true" data-netlify-recaptcha="true" novalidate="novalidate">
+                                        <input type="hidden" name="form-name" value="contact-form-mejor" />
                                         <div class="row">
                                             <div class="col-md-6 col-12 form-field">
                                                 <input type="text" class="form-control" name="name" id="name"
@@ -195,11 +196,9 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="clearfix error-handling-messages">
-                                            <div id="success">Thank you! Your message has been sent.</div>
-                                            <div id="error"> Error occurred while sending email. Please try again
-                                                right now. </div>
-                                        </div>
+                                        <div data-netlify-recaptcha="true"></div>
+                                        <div id="form-message-success" style="display: none;">Your message was sent successfully!</div>
+                                        <div id="form-message-error" style="display: none;">Something went wrong. Please try again.</div>
                                     </form>
                                 </div>
                             </div>
@@ -228,7 +227,7 @@
                                         </div>
                                         <div class="office-info-text">
                                             <h2>E-mail</h2>
-                                            <p>info@thecloakedagency.com</p>
+                                            <p>cloakedagency@gmail.com</p>
                                         </div>
                                     </div>
                                 </div>
@@ -241,7 +240,7 @@
                                         </div>
                                         <div class="office-info-text">
                                             <h2>Call us</h2>
-                                            <p>+234 (901)-188-1499</p>
+                                            <p>(916)-193-0145</p>
                                             <p></p>
                                         </div>
                                     </div>
@@ -293,9 +292,9 @@
                                         </div>
                                         <div class="contact-ft">
                                             <ul>
-                                                <li><i class="icon-Group-7042"></i>(901)-188-1499</li>
-                                                <li><i class="icon-Group-7043"></i>info@thecloakedagencycom</li>
-                                                <li><i class="icon-Group-7044"></i>Abeokuta, Lagos, Tennessee</li>
+                                                <li><i class="icon-Group-7042"></i>(916)-193-0145</li>
+                                                <li><i class="icon-Group-7043"></i>cloakedagency@gmail.com</li>
+                                                <li><i class="icon-Group-7044"></i>Abeokuta • Lagos</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -305,10 +304,10 @@
                                         <div class="widget-title">
                                             <h3>Get Free Estimate</h3>
                                         </div>
-                                        <form action="#">
+                                        <form name="newsletter" method="POST" data-netlify="true">
+                                            <input type="hidden" name="form-name" value="newsletter" />
                                             <div class="form-field">
-                                                <input type="email" placeholder="Your e-mail address" id="email"
-                                                    required>
+                                                <input type="email" name="email" placeholder="Your e-mail address" id="email" required>
                                                 <button type="submit"><i class="icon-flyer"></i></button>
                                             </div>
                                         </form>
